@@ -1,0 +1,295 @@
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>
+    </title>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    <script src="script3.js"></script>
+  </head>
+  <body>
+    
+    <h1 style="text-align: center; font-size: 100px; border: 3px double black;">Rudy Guinea Realtor&reg;</h1>
+
+    <div class="header">
+        <p style="float: left;">
+          Mobile: 480-259-5560<br>Office: 623 552 3773<br>
+          Email: rudyguinea@hotmail.com
+        </p>
+        <img src="pictures/headerSelfie.jpg" style="width: 300px; height: 400px; margin: 30px; border: 5px solid;">
+    </div>
+
+    <div class="tab_section">
+      <button class="tab" onclick="openTab(event, 'Listings')">Current Listings</button>
+      <button class="tab" onclick="openTab(event, 'Testimonials')">Testimonials</button>
+      <button class="tab" onclick="openTab(event, 'Contact')">Contact Information</button>
+    </div>
+
+    <!-- This is the listing section -->
+
+    <div id="Listings" class="tab_content">
+      <!-- FIRST PROPERTY -->
+      <button id="open_button" onclick="openModal()">View More</button>
+      <div style="display: flex;">
+      <img src="pictures/exampleHouse.jpg" alt="First property">
+
+      <div id="the_modal" class="modal">
+        <div class="modal_content">
+          <span class="close">&times;</span>
+          <div class="slideshow-container">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="pictures/exampleHouse.jpg" style="width:100%">
+              <div class="text">Frontyard</div>
+            </div>
+            
+            <div class="mySlides" style="display: none;">
+              <div class="numbertext">2 / 4</div>
+              <img src="pictures/exampleYard.jpg" style="width:100%">
+              <div class="text">Backyard</div>
+            </div>
+            
+            <div class="mySlides" style="display: none;">
+              <div class="numbertext">3 / 4</div>
+              <img src="pictures/exampleKitchen.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides" style="display: none;">
+              <div class="numbertext">4 / 4</div>
+              <img src="pictures/exampleLiving.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
+        </div>
+      </div>
+
+      <div class="text_block">
+        <p><b>1234 W 123st Ave</b></p>
+        <p>Property Details</p>
+        <ul title="Interior Details">
+          <li>3 bedrooms</li>
+          <li>2 bathrooms</li>
+          <li>3 bedrooms</li>
+          <li>Flooring: wood, carpet</li>
+          <li>Appliance features: microwave,<br> oven, refridgerator, dishwasher,<br> washer, dryer, ceiling fans</li>
+          <li>2,400 sqft of living space</li>
+          <li>Garage: attached</li>
+          <li>Fencing</li>
+        </ul>
+      </div>
+      </div>
+
+      <hr>
+
+      <!-- SECOND PROPERTY -->
+      <button id="open_button2" onclick="openModal2()">View More</button>
+      <div style="display: flex;">
+      <img src="pictures/exampleHouse2.jpg" alt="First property" style="width: 320px; height: 306px;">
+
+      <div id="the_modal2" class="modal">
+        <div class="modal_content">
+          <span class="close2">&times;</span>
+          <div class="slideshow-container">
+
+            <div class="mySlides2">
+              <div class="numbertext">1 / 4</div>
+              <img src="pictures/exampleHouse2.jpg" style="width:100%">
+              <div class="text">Frontyard</div>
+            </div>
+            
+            <div class="mySlides2" style="display: none;">
+              <div class="numbertext">2 / 4</div>
+              <img src="pictures/exampleBed.jpg" style="width:100%">
+              <div class="text">Backyard</div>
+            </div>
+            
+            <div class="mySlides2" style="display: none;">
+              <div class="numbertext">3 / 4</div>
+              <img src="pictures/exampleKitchen2.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides2" style="display: none;">
+              <div class="numbertext">4 / 4</div>
+              <img src="pictures/exampleLiving2.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides2(-1)">❮</a>
+            <a class="next" onclick="plusSlides2(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot2" onclick="currentSlide2(1)"></span> 
+              <span class="dot2" onclick="currentSlide2(2)"></span> 
+              <span class="dot2" onclick="currentSlide2(3)"></span>
+              <span class="dot2" onclick="currentSlide2(4)"></span> 
+            </div>
+        </div>
+      </div>
+
+      <div class="text_block">
+        <p><b>1234 W 123st Ave</b></p>
+        <p>Property Details</p>
+        <ul title="Interior Details">
+          <li>3 bedrooms</li>
+          <li>2 bathrooms</li>
+          <li>3 bedrooms</li>
+          <li>Flooring: wood, carpet</li>
+          <li>Appliance features: microwave,<br> oven, refridgerator, dishwasher,<br> washer, dryer, ceiling fans</li>
+          <li>2,400 sqft of living space</li>
+          <li>Garage: attached</li>
+          <li>Fencing</li>
+        </ul>
+      </div>
+      </div>
+
+      <hr>
+
+      <!-- THIRD PROPERTY -->
+      <button id="open_button3" onclick="openModal3()">View More</button>
+      <div style="display: flex;">
+      <img src="pictures/exampleHouse.jpg" alt="First property">
+
+      <div id="the_modal3" class="modal">
+        <div class="modal_content">
+          <span class="close3">&times;</span>
+          <div class="slideshow-container">
+
+            <div class="mySlides3">
+              <div class="numbertext">1 / 4</div>
+              <img src="pictures/exampleHouse.jpg" style="width:100%">
+              <div class="text">Frontyard</div>
+            </div>
+            
+            <div class="mySlides3" style="display: none;">
+              <div class="numbertext">2 / 4</div>
+              <img src="pictures/exampleYard.jpg" style="width:100%">
+              <div class="text">Backyard</div>
+            </div>
+            
+            <div class="mySlides3" style="display: none;">
+              <div class="numbertext">3 / 4</div>
+              <img src="pictures/exampleKitchen.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides3" style="display: none;">
+              <div class="numbertext">4 / 4</div>
+              <img src="pictures/exampleLiving.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides3(-1)">❮</a>
+            <a class="next" onclick="plusSlides3(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot3" onclick="currentSlide3(1)"></span> 
+              <span class="dot3" onclick="currentSlide3(2)"></span> 
+              <span class="dot3" onclick="currentSlide3(3)"></span>
+              <span class="dot3" onclick="currentSlide3(4)"></span> 
+            </div>
+        </div>
+      </div>
+
+      <div class="text_block">
+        <p><b>1234 W 123st Ave</b></p>
+        <p>Property Details</p>
+        <ul title="Interior Details">
+          <li>3 bedrooms</li>
+          <li>2 bathrooms</li>
+          <li>3 bedrooms</li>
+          <li>Flooring: wood, carpet</li>
+          <li>Appliance features: microwave,<br> oven, refridgerator, dishwasher,<br> washer, dryer, ceiling fans</li>
+          <li>2,400 sqft of living space</li>
+          <li>Garage: attached</li>
+          <li>Fencing</li>
+        </ul>
+      </div>
+      </div>
+
+    </div>
+
+    <!-- This is the testimonials section -->
+
+    <div id="Testimonials" class="tab_content">
+      <p class="test">"<i>The highest compliment my clients can give me is the referral of their friends, family and business partners.</i>"</p>
+    </div>
+
+    <!-- This is the contact information section -->
+
+    <div id="Contact" class="tab_content" style="font-size: 25px;">
+      <h2>Contact Information</h2>
+      <p>If you have any questions about any of the properties or if you would like to schedule a tour of any of them, <br>
+        you can send me an email right from here.
+      </p>
+      <br><br>
+
+      <form action="mailto:rudyguinea@hotmail.com" method="post" enctype="text/plain">
+        Name: <br>
+        <input type="text"><br>
+        E-mail: <br>
+        <input type="text"><br>
+        Message: <br>
+        <textarea rows="6" cols="50">Type Here</textarea><br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+      </form>
+
+    </div>
+
+    <div>
+      <p style="font-size: 50px;">
+        My name is Rudy Guinea and I am a realtor in affiliation with realtyonegroup. Our company
+        is one of the fastest growing companies here in America as wellas being a top 1% company.
+        Realty One provides the best professionals to serve our communities in helping people find
+        their dream homes. I have worked with many different properties ranging from modern homes
+        to ranch properties here in the Litchfield area of Arizona.
+      </p>
+
+      <p style="font-size: 50px;">
+        If you would like to see some of the properties that I have previously sold or if you would
+        like to contact me through other means I also have an Instagram, Facebook, as well as my
+        profile on Realty One.
+      </p>
+      
+      <div style="display: flex;">
+        <a href="https://www.facebook.com/rudyguinea.realtor/" target="_blank">Facebook</a><br><br>
+        <a href="https://www.instagram.com/rudyguinea.realtor/" target="_blank">Instagram</a><br><br>
+        <a href="https://phoenix.myrealtyonegroup.com/real-estate-agent/25880/rudy-guinea" target="_blank">Realty One</a><br><br>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <p style="float: left;">
+        Mobile: 480-259-5560<br>Office: 623 552 3773<br>
+        Email: rudyguinea@hotmail.com
+      </p>
+      <p>This web site was created by Brian Ruiz</p>
+    </div>
+
+  </body>
+</html>
